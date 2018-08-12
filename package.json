@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/mjcampagna/webpack-react-boilerplate.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Matthew Campagna",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mjcampagna/webpack-react-boilerplate/issues"
   },
