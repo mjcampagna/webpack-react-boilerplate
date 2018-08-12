@@ -17,7 +17,7 @@ const server = http.createServer( (req, res) => {
 				filePath += '/index.html';
 			}
 
-	fs.readFile( filePath, (err, data ) => {
+			fs.readFile( filePath, (err, data ) => {
 				if ( err ) {
 					res.statusCode = 500;
 					res.end( `Server error: "${err}"` );
