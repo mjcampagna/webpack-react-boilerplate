@@ -358,6 +358,27 @@ body {
 }
 
 a {
-	color: #1E88E5;
+	color: #33AAFF;
+}
+
+#loading-spinner {
+	margin: 12px auto;
+	text-align: center;
+}
+
+#loading-spinner > div {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 6px;
+	display: inline-block;
+	font-size: 0;
+	line-height: 48px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 48px; height: 48px;
 }
 

@@ -357,7 +357,173 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar App = function (_Component) {\n\t_inherits(App, _Component);\n\n\tfunction App() {\n\t\t_classCallCheck(this, App);\n\n\t\treturn _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));\n\t}\n\n\t_createClass(App, [{\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn _react2.default.createElement(\n\t\t\t\t'p',\n\t\t\t\tnull,\n\t\t\t\t'I am App.'\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn App;\n}(_react.Component);\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/components/App.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Loading = __webpack_require__(/*! ./Loading */ \"./src/components/Loading/index.js\");\n\nvar _Loading2 = _interopRequireDefault(_Loading);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar App = function (_Component) {\n\t_inherits(App, _Component);\n\n\tfunction App(props) {\n\t\t_classCallCheck(this, App);\n\n\t\tvar _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));\n\n\t\t_this.state = {\n\t\t\tisLoading: true\n\t\t};\n\t\treturn _this;\n\t}\n\n\t_createClass(App, [{\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tvar _this2 = this;\n\n\t\t\tsetTimeout(function () {\n\t\t\t\t_this2.setState({\n\t\t\t\t\tisLoading: false\n\t\t\t\t});\n\t\t\t}, 500);\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\tif (this.state.isLoading) {\n\t\t\t\treturn _react2.default.createElement(_Loading2.default, { spinner: 'puff', color: '#33AAFF' });\n\t\t\t}\n\t\t\treturn _react2.default.createElement(\n\t\t\t\t'p',\n\t\t\t\tnull,\n\t\t\t\t'I am App.'\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn App;\n}(_react.Component);\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/components/App.jsx?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/index.js":
+/*!*****************************************!*\
+  !*** ./src/components/Loading/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./loading.css */ \"./src/components/Loading/loading.css\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Loading = function Loading(props) {\n\treturn _react2.default.createElement(\n\t\t'div',\n\t\t{ id: 'loading-spinner' },\n\t\t_react2.default.createElement('div', { style: {\n\t\t\t\tbackgroundColor: props.color,\n\t\t\t\tbackgroundImage: 'url(\\n\\t\\t\\t\\t\\t' + __webpack_require__(\"./src/components/Loading/svg-loaders sync recursive ^\\\\.\\\\/.*\\\\.svg$\")(\"./\" + props.spinner + '.svg') + '\\n\\t\\t\\t\\t)',\n\t\t\t\tborderColor: props.color\n\t\t\t} })\n\t);\n};\nexports.default = Loading;\n\n//# sourceURL=webpack:///./src/components/Loading/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/loading.css":
+/*!********************************************!*\
+  !*** ./src/components/Loading/loading.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/Loading/loading.css?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders sync recursive ^\\.\\/.*\\.svg$":
+/*!***************************************************************!*\
+  !*** ./src/components/Loading/svg-loaders sync ^\.\/.*\.svg$ ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./audio.svg\": \"./src/components/Loading/svg-loaders/audio.svg\",\n\t\"./ball-triangle.svg\": \"./src/components/Loading/svg-loaders/ball-triangle.svg\",\n\t\"./bars.svg\": \"./src/components/Loading/svg-loaders/bars.svg\",\n\t\"./circles.svg\": \"./src/components/Loading/svg-loaders/circles.svg\",\n\t\"./grid.svg\": \"./src/components/Loading/svg-loaders/grid.svg\",\n\t\"./hearts.svg\": \"./src/components/Loading/svg-loaders/hearts.svg\",\n\t\"./oval.svg\": \"./src/components/Loading/svg-loaders/oval.svg\",\n\t\"./puff.svg\": \"./src/components/Loading/svg-loaders/puff.svg\",\n\t\"./rings.svg\": \"./src/components/Loading/svg-loaders/rings.svg\",\n\t\"./spinning-circles.svg\": \"./src/components/Loading/svg-loaders/spinning-circles.svg\",\n\t\"./tail-spin.svg\": \"./src/components/Loading/svg-loaders/tail-spin.svg\",\n\t\"./three-dots.svg\": \"./src/components/Loading/svg-loaders/three-dots.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components/Loading/svg-loaders sync recursive ^\\\\.\\\\/.*\\\\.svg$\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders_sync_^\\.\\/.*\\.svg$?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/audio.svg":
+/*!******************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/audio.svg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/audio.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/audio.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/ball-triangle.svg":
+/*!**************************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/ball-triangle.svg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/ball-triangle.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/ball-triangle.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/bars.svg":
+/*!*****************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/bars.svg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/bars.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/bars.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/circles.svg":
+/*!********************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/circles.svg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/circles.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/circles.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/grid.svg":
+/*!*****************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/grid.svg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/grid.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/grid.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/hearts.svg":
+/*!*******************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/hearts.svg ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/hearts.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/hearts.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/oval.svg":
+/*!*****************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/oval.svg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/oval.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/oval.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/puff.svg":
+/*!*****************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/puff.svg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/puff.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/puff.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/rings.svg":
+/*!******************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/rings.svg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/rings.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/rings.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/spinning-circles.svg":
+/*!*****************************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/spinning-circles.svg ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/spinning-circles.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/spinning-circles.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/tail-spin.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/tail-spin.svg ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/tail-spin.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/tail-spin.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Loading/svg-loaders/three-dots.svg":
+/*!***********************************************************!*\
+  !*** ./src/components/Loading/svg-loaders/three-dots.svg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/three-dots.svg\";\n\n//# sourceURL=webpack:///./src/components/Loading/svg-loaders/three-dots.svg?");
 
 /***/ }),
 
