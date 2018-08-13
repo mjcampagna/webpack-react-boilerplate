@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Loading from './Loading';
+import Portal from './Portal';
 
 export default class App extends Component {
 	constructor(props) {
@@ -22,7 +23,14 @@ export default class App extends Component {
 			return <Loading spinner="puff" color="#33AAFF" />;
 		}
 		return (
-			<p>I am App.</p>
+			<Fragment>
+				<p>I am App.</p>
+
+				<Portal>
+					<h1>I'm in a portal!</h1>
+				</Portal>
+
+			</Fragment>
 		);
 	}
 }
