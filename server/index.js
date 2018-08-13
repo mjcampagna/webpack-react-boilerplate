@@ -24,6 +24,11 @@ const server = http.createServer( (req, res) => {
 				} else {
 					const ext = path.extname( req.url );
 					switch(ext) {
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+
+						case '.svg':
+							res.writeHead( 200, {'Content-Type': 'image/svg+xml'} );
+							res.end( data.toString('utf-8') );
 
 						case '.css':
 							res.writeHead( 200, {'Content-Type': 'text/css'} );
