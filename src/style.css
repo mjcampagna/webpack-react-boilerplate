@@ -35,7 +35,11 @@ a {
 }
 
 #modal-button-close {
+  background: transparent;
+  border: none;
   cursor: pointer;
+  outline: none;
+  padding: 12px;
   position: absolute; top: 0; right: 0;
 }
 
