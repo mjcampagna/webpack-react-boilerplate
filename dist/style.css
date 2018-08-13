@@ -361,6 +361,37 @@ a {
 	color: #33AAFF;
 }
 
+#modal-overlay {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+  width: auto; height: auto;
+}
+
+#modal-background {
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  width: auto; height: auto;
+}
+
+#modal-button-close {
+  cursor: pointer;
+  position: absolute; top: 0; right: 0;
+}
+
+#modal-card {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  max-width: calc(100% - 12px);
+  min-width: 614px;
+  padding: 24px;
+  position: relative;
+}
+
 #loading-spinner {
 	margin: 12px auto;
 	text-align: center;

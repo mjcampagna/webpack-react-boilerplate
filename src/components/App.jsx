@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
+
 import Loading from './Loading';
-import Portal from './Portal';
+import Modal from './Modal';
+import Toggle from './Toggle';
 
 export default class App extends Component {
 	constructor(props) {
@@ -26,9 +28,16 @@ export default class App extends Component {
 			<Fragment>
 				<p>I am App.</p>
 
-				<Portal>
-					<h1>I'm in a portal!</h1>
-				</Portal>
+				<Toggle>
+				{({on, toggle}) => (
+					<Fragment>
+						<button onClick={toggle}>Toggle</button>
+						<Modal on={on} toggle={toggle}>
+							<h1>OMIGOD</h1>
+						</Modal>
+					</Fragment>
+				)}
+				</Toggle>
 
 			</Fragment>
 		);
