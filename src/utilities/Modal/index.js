@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import Icon from '../../utilities/Icon.js';
-import Portal from '../Portal';
+import { Icon, Portal } from '../';
 
 export default class Modal extends Component {
 	render() {

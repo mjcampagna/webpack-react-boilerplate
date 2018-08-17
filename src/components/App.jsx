@@ -1,8 +1,5 @@
 import React, { Component, Fragment } from 'react';
-
-import Loading from './Loading';
-import Modal from './Modal';
-import Toggle from './Toggle';
+import { Loading, Modal, Toggle } from './utilities';
 
 export default class App extends Component {
 	constructor(props) {
