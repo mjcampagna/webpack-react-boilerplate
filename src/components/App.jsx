@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Loading, Modal, Toggle } from './utilities';
+import { Loading, Modal, Toggle } from '../Utilities';
 
 export default class App extends Component {
 	constructor(props) {
