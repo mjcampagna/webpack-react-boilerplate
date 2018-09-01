@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Transition, animated } from 'react-spring';
 import { Icon, Portal } from '../';
 
+import './style.css';
+
 export default class Modal extends Component {
 	render() {
 		const { children, on, toggle } = this.props;

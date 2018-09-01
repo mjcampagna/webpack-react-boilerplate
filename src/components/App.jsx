@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Loading, Modal, Toggle } from '../Utilities';
+import { Icon, Loading, Modal, Toggle } from '../Utilities';
 
 export default class App extends Component {
 	constructor(props) {
@@ -19,7 +19,7 @@ export default class App extends Component {
 
 	render() {
 		if ( this.state.isLoading ) {
-			return <Loading spinner="puff" color="#33AAFF" />;
+			return <Loading name="tail-spin" size="32" />;
 		}
 		return (
 			<Fragment>
@@ -35,7 +35,6 @@ export default class App extends Component {
 					</Fragment>
 				)}
 				</Toggle>
-
 			</Fragment>
 		);
 	}
