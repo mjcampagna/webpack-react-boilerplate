@@ -5,6 +5,17 @@ import { Icon, Portal } from '../';
 import './style.css';
 
 export default class Modal extends Component {
+
+	componentDidUpdate() {
+		if ( this.props.on ) {
+			document.body.classList.add('overflow-hidden');
+		} else {
+			if ( document.body.classList.contains('overflow-hidden') ) {
+				document.body.classList.remove('overflow-hidden');
+			}
+		}
+	}
+
 	render() {
 		const { children, on, toggle } = this.props;
 		return (
@@ -22,15 +33,28 @@ export default class Modal extends Component {
 					}}
 				>
 					{on && ( styles => (
-						<animated.div id="modal-overlay" style={styles}>
-							<div id="modal-background" onClick={toggle}></div>
-							<div id="modal-card">
-								<button id="modal-button-close" onClick={toggle}>
-									<Icon name="close" />
-								</button>
-								{children}
+						<animated.div id="modal-container" style={styles}>
+							<div id="modal-background"></div>
+							<div id="modal-inner">
+								<div id="modal-exit" onClick={toggle}></div>
+								<div id="modal-card">
+									<button id="modal-button--close" onClick={toggle}>
+										<Icon name="close" />
+									</button>
+									{children}
+								</div>
 							</div>
 						</animated.div>
+
+						// <animated.div id="modal-overlay" style={styles}>
+						// 	<div id="modal-background" onClick={toggle}></div>
+						// 	<div id="modal-card">
+						// 		<button id="modal-button-close" onClick={toggle}>
+						// 			<Icon name="close" />
+						// 		</button>
+						// 		{children}
+						// 	</div>
+						// </animated.div>
 					) )}
 				</Transition>
 			</Portal>

@@ -1,45 +1,80 @@
-#modal-overlay {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-  position: fixed; top: 0; right: 0; bottom: 0; left: 0;
-  width: auto; height: auto;
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#modal-container {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  outline: none;
+  position: fixed;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  width: 100%;
+  z-index: 99992;
+}
+
+#modal-container * {
+  box-sizing: border-box;
 }
 
 #modal-background {
   background-color: rgba(0,0,0,0.5);
-  cursor: pointer;
-  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-  width: auto; height: auto;
 }
 
-#modal-button-close {
+#modal-background,
+#modal-inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#modal-inner {
+  font-size: 0;
+  overflow: auto;
+  text-align: center;
+}
+
+#modal-inner::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+#modal-exit {
+  cursor: pointer;
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+}
+
+#modal-card {
+  background: #FFF;
+  border-radius: 3px;
+  color: #333;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 24px;
+  max-width: 768px;
+  padding: 44px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#modal-button--close {
   background: transparent;
   border: none;
   box-shadow: none;
   cursor: pointer;
+  font-size: 0;
+  line-height: 1;
   outline: none;
   margin: 0;
-  padding: 12px;
+  padding: 16px;
   position: absolute; top: 0; right: 0;
-}
-
-#modal-card {
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  box-sizing: border-box;
-  max-width: calc(100% - 12px);
-  padding: 24px;
-  position: relative;
-  width: 614px;
-}
-
-@media screen and ( max-width: 614px ) {
-
-  #modal-card {
-    min-width: 0;
-    width: calc( 100% - 12px );
-  }
-
 }
