@@ -45,16 +45,6 @@ export default class Modal extends Component {
 								</div>
 							</div>
 						</animated.div>
-
-						// <animated.div id="modal-overlay" style={styles}>
-						// 	<div id="modal-background" onClick={toggle}></div>
-						// 	<div id="modal-card">
-						// 		<button id="modal-button-close" onClick={toggle}>
-						// 			<Icon name="close" />
-						// 		</button>
-						// 		{children}
-						// 	</div>
-						// </animated.div>
 					) )}
 				</Transition>
 			</Portal>
