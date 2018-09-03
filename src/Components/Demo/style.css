@@ -1,0 +1,24 @@
+#demo {
+	max-width: 768px;
+	padding: 24px;
+}
+
+#demo h1,
+#demo h2,
+#demo h3 {
+	margin-bottom: 1.25rem;
+}
+
+#demo #loading-demos {
+	margin: 0 0 1.25rem;
+	max-width: calc( 72px * 4 );
+	padding: 0;
+}
+
+#demo #loading-demos li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0 12px;
+	vertical-align: top;
+}

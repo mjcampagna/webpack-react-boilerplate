@@ -16,8 +16,10 @@
 #modal-button-close {
   background: transparent;
   border: none;
+  box-shadow: none;
   cursor: pointer;
   outline: none;
+  margin: 0;
   padding: 12px;
   position: absolute; top: 0; right: 0;
 }

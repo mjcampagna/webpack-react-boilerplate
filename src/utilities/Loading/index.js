@@ -4,7 +4,7 @@ import './style.css';
 export default class Loading extends PureComponent {
 
 	static defaultProps = {
-		color: '#333',
+		color: '#FFF',
 		name: 'puff',
 		size: '48'
 	}
@@ -13,7 +13,7 @@ export default class Loading extends PureComponent {
     switch( this.props.name ) {
 
 			case 'audio' : return (
-				<svg width="55" height="80" viewBox="0 0 55 80" xmlns="http://www.w3.org/2000/svg" fill={this.props.color}>
+				<svg width="55" height="80" viewBox="0 0 55 80" xmlns="http://www.w3.org/2000/svg" fill={this.props.color} style={{ width: 'auto', maxHeight: '100%' }}>
 					<g transform="matrix(1 0 0 -1 0 80)">
 						<rect width="10" height="20" rx="3">
 						<animate attributeName="height"
@@ -98,7 +98,7 @@ export default class Loading extends PureComponent {
 			);
 
 			case 'bars' : return (
-				<svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill={this.props.color}>
+				<svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill={this.props.color} style={{ width: 'auto', maxHeight: '100%' }}>
 					<rect y="10" width="15" height="120" rx="6">
 						<animate attributeName="height"
 						begin="0.5s" dur="1s"
