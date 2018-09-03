@@ -18,7 +18,7 @@ export default class Modal extends Component {
 						opacity: 1
 					}} 
 					leave={{
-						opacity: 0
+						opacity: 0, cursor: 'default', pointerEvents: 'none'
 					}}
 				>
 					{on && ( styles => (

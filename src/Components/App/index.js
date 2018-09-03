@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import { Icon, Loading, Modal, Toggle } from '../Utilities';
+import { Loading, Modal, Toggle } from '../../Utilities';
+import './style.css';
 
 export default class App extends Component {
 	constructor(props) {
@@ -28,7 +29,7 @@ export default class App extends Component {
 				<Toggle>
 				{({on, toggle}) => (
 					<Fragment>
-						<button onClick={toggle}>Toggle</button>
+						<button onClick={toggle}>Open Modal</button>
 						<Modal on={on} toggle={toggle}>
 							<h1>OMIGOD</h1>
 						</Modal>

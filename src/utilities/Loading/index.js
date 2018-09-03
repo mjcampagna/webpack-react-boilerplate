@@ -1,5 +1,5 @@
 import React, { Fragment, PureComponent } from 'react';
-import './loading.css';
+import './style.css';
 
 export default class Loading extends PureComponent {
 
