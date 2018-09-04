@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Icon, Loading, Modal, Toggle } from '../../Utilities';
+import { EUCookieNotice, Icon, Loading, Modal, Toggle } from '../../Utilities';
 import LoremIpsum from './LoremIpsum.jsx';
 import './style.css';
 
@@ -128,6 +128,14 @@ export default class Demo extends Component {
 					<Loading name="ball-triangle" />
 				</li>
 				</ul>
+
+				<h3>Cookie</h3>
+
+				<p><strong>Cookie</strong> is a Higher-Order Component containing generic logic for getting, setting, deleting, and checking the existence of cookies.</p>
+
+				<p>For example code, see the included <strong>EUCookieNotice</strong> component, demonstrated here.</p>
+
+				<EUCookieNotice />
 
 			</div>
 		);

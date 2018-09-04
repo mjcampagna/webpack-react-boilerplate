@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import { Loading, Modal, Toggle } from '../../Utilities';
+import React, { Component } from 'react';
+import { Loading } from '../../Utilities';
 import './style.css';
 
 import Demo from '../Demo';
