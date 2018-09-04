@@ -1,7 +1,44 @@
+html {
+	background: #FFEB3B;
+}
+
 #demo {
 	font-size: 0.875rem;
 	max-width: 768px;
 	padding: 24px;
+}
+
+#demo a {
+	color: #33AAFF;
+}
+
+#demo button {
+  background: #33AAFF;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+	display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+	margin-right: 0.625rem;
+  margin-bottom: 1.25rem;
+  outline: 0;
+  padding: 0 0.625rem;
+  transition: 0.1s all ease-in-out;
+}
+
+#demo button:hover {
+  background: #0288D1;
+}
+
+#demo button:active {
+  box-shadow: 0 0 0 transparent;
+}
+
+#demo p,
+#demo pre {
+  margin-bottom: 1.25rem;
 }
 
 #demo h1,
@@ -51,13 +88,4 @@
 
 #demo li[title] {
 	cursor: help;
-}
-
-#demo pre {
-	margin-bottom: 1.25rem;
-}
-
-#demo button {
-	display: inline-block;
-	margin-right: 0.625rem;
 }

@@ -1,6 +1,5 @@
 html {
   background: #FFF;
-  background: #FFEB3B;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
@@ -22,32 +21,6 @@ body * {
   padding: 0;
 }
 
-a {
-	color: #33AAFF;
-}
-
-button {
-  background: #33AAFF;
-  border: none;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-  color: #fff;
-  cursor: pointer;
-  font-size: 0.75rem;
-  line-height: 1.75rem;
-  margin-bottom: 1.25rem;
-  outline: 0;
-  padding: 0 0.625rem;
-  transition: 0.1s all ease-in-out;
-}
-
-button:hover {
-  background: #0288D1;
-}
-
-button:active {
-  box-shadow: 0 0 0 transparent;
-}
-
 p {
-  margin-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
 }
