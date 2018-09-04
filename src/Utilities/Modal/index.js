@@ -39,7 +39,7 @@ export default class Modal extends Component {
 								<div id="modal-exit" onClick={toggle}></div>
 								<div id="modal-card">
 									<button id="modal-button--close" onClick={toggle}>
-										<Icon name="close" />
+										<Icon name="x-small" />
 									</button>
 									{children}
 								</div>

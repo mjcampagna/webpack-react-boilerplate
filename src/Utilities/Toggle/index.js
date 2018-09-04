@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 export default class Toggle extends Component {
 	constructor(props) {
@@ -6,6 +6,7 @@ export default class Toggle extends Component {
 		this.state = {
 			on: false
 		}
+		this.toggle = this.toggle.bind(this);
 	}
 
 	toggle = () => {

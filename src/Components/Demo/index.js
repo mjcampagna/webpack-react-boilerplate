@@ -46,21 +46,42 @@ export default class Demo extends Component {
 				<pre>&lt;Icon name="close" color="#000" /&gt;</pre>
 
 				<ul id="icon-demos">
-				<li style={{ background: '#1ABC9C' }} title="arrow-up">
-					<Icon name="arrow-up" color="#FFF" />
+				<li title="x">
+					<Icon name="x" color="#FFF" />
 				</li>
-				<li style={{ background: '#34495E' }} title="arrow-down">
-					<Icon name="arrow-down" color="#FFF" />
+				<li title="chevron-up">
+					<Icon name="chevron-up" color="#FFF" />
 				</li>
-				<li style={{ background: '#F39C12' }} title="arrow-left">
-					<Icon name="arrow-left" color="#FFF" />
+				<li title="chevron-down">
+					<Icon name="chevron-down" color="#FFF" />
 				</li>
-				<li style={{ background: '#9B59B6' }} title="arrow-right">
-					<Icon name="arrow-right" color="#FFF" />
+				<li title="chevron-left">
+					<Icon name="chevron-left" color="#FFF" />
 				</li>
-				<li style={{ background: '#3498DB' }} title="close">
-					<Icon name="close" color="#FFF" />
+				<li title="chevron-right">
+					<Icon name="chevron-right" color="#FFF" />
 				</li>
+
+				<li title="x-thin">
+					<Icon name="x-thin" color="#FFF" />
+				</li>
+				<li title="chevron-thin-up">
+					<Icon name="chevron-thin-up" color="#FFF" />
+				</li>
+				<li title="chevron-thin-down">
+					<Icon name="chevron-thin-down" color="#FFF" />
+				</li>
+				<li title="chevron-thin-left">
+					<Icon name="chevron-thin-left" color="#FFF" />
+				</li>
+				<li title="chevron-thin-right">
+					<Icon name="chevron-thin-right" color="#FFF" />
+				</li>
+
+				<li title="x-small">
+					<Icon name="x-small" color="#FFF" />
+				</li>
+
 				</ul>
 
 				<h3>Loading</h3>
