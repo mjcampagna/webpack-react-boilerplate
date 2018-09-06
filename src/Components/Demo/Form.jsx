@@ -88,12 +88,11 @@ export default class Form extends Component {
 				/>
 
 				{checkboxGroup}
+
 				{radioGroup}
 
-				<select name="select" 
-					value={this.state.select} 
-					onChange={this.handleFormOnChange}>
-				{selectOptions}
+				<select name="select" value={this.state.select} onChange={this.handleFormOnChange}>
+					{selectOptions}
 				</select>
 
 				<input type="submit" value="Submit" />
