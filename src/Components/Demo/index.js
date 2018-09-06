@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { EUCookieNotice, Icon, Loading, Modal, Toggle } from '../../Utilities';
 import './style.css';
 
-import Form from './Form.jsx';
+import Form from '../../Utilities/Form';
 import LoremIpsum from './LoremIpsum.jsx';
 
 export default class Demo extends Component {
