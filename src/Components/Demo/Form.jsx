@@ -11,35 +11,35 @@ export default class Form extends Component {
 		select: 'one', 
 
 	}
-	
+
 	handleFormOnChange = event => {
-		if ( event.target.type === 'checkbox' && Array.isArray(this.state[event.target.name]) ) 
-		{
-			let updatedState = this.state[event.target.name].slice();
-			if ( event.target.checked ) {
-				updatedState.splice( 0, 0, event.target.value );
+		const target = event.target;
+		if ( target.type === 'checkbox' && Array.isArray(this.state[target.name]) ) {
+			let updatedState = this.state[target.name].slice();
+			if ( target.checked ) {
+				updatedState.splice( 0, 0, target.value );
 			} else {
-				updatedState = updatedState.filter( value => value !== event.target.value );
+				updatedState = updatedState.filter( value => value !== target.value );
 			}
 			this.setState({
-				[event.target.name]: updatedState
+				[target.name]: updatedState
 			});
 		} else 
-		if ( event.target.type === 'checkbox' ) {
+		if ( target.type === 'checkbox' ) {
 			this.setState({
-				[event.target.name]: event.target.checked
+				[target.name]: target.checked
 			});
 		}
 		else {
 			this.setState({
-				[event.target.name]: event.target.value
+				[target.name]: target.value
 			});
 		}
 	}
 
 	handleFormOnSubmit = event => {
 		event.preventDefault();
-		console.log(JSON.stringify(this.state));
+		console.log( JSON.stringify(this.state) );
 	}
 
 	render() {
