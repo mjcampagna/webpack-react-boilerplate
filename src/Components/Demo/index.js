@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { EUCookieNotice, Icon, Loading, Modal, Toggle } from '../../Utilities';
-import LoremIpsum from './LoremIpsum.jsx';
 import './style.css';
+
+import Form from './Form.jsx';
+import LoremIpsum from './LoremIpsum.jsx';
 
 export default class Demo extends Component {
 	render() {
@@ -15,6 +17,12 @@ export default class Demo extends Component {
 				<p>Alternatively, view Components/Demo/index.js for example markup.</p>
 
 				<h2>Components</h2>
+
+				<h3>Form</h3>
+
+				<p>Just an example form.</p>
+
+				<Form />
 
 				<h3>Modal</h3>
 
