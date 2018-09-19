@@ -6,13 +6,12 @@ export default class Toggle extends Component {
 		this.state = {
 			on: false
 		}
-		this.toggle = this.toggle.bind(this);
 	}
 
 	toggle = () => {
-		this.setState({
-			on: !this.state.on
-		});
+		this.setState( state => ({
+			on: !state.on
+		}));
 	}
 
 	render() {
