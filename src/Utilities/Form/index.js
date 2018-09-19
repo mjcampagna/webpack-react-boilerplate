@@ -10,11 +10,13 @@ export default class Form extends Component {
 		checkboxGroup: ['Two', 'Three'],
 		radioGroup: 'Radio One', 
 		select: 'Option 2', 
+		textarea: ''
 
 	}
 
 	handleFormOnChange = event => {
 		const target = event.target;
+		console.log( target.readonly )
 		if ( target.type === 'checkbox' && Array.isArray(this.state[target.name]) ) {
 			let updatedState = this.state[target.name].slice();
 			if ( target.checked ) {
@@ -96,6 +98,10 @@ export default class Form extends Component {
 				<select name="select" value={this.state.select} onChange={this.handleFormOnChange}>
 					{selectOptions}
 				</select>
+
+				<textarea name="textarea" value={this.state.textarea}
+					onChange={this.handleFormOnChange} 
+				></textarea>
 
 				<input type="submit" value="Submit" />
 			</form>
