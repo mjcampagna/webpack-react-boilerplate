@@ -75,21 +75,34 @@ export default class Form extends Component {
 		return (
 			<form ref={this.form} onSubmit={this.handleFormOnSubmit}>
 
-				<label>Text 01</label>
-				<input type="text" name="text01" 
-					value={this.state.text01} 
-					onChange={this.handleFormOnChange} 
-				/>
+				<div>
+					<label>Text 01</label>
+					<input type="text" name="text01" 
+						value={this.state.text01} 
+						onChange={this.handleFormOnChange} 
+					/>
+				</div>
 
-				<label>Text 02</label>
-				<input type="text" name="text02" 
-					value={this.state.text02} 
-					onChange={this.handleFormOnChange} 
-				/>
+				<div>
+					<label>Text 02</label>
+					<input type="text" name="text02" 
+						value={this.state.text02} 
+						onChange={this.handleFormOnChange} 
+					/>
+				</div>
 
-				<label><input type="checkbox" name="checkbox" value="Happy" 
-					onChange={this.handleFormOnChange} 
-				/>Single Checkbox</label>
+				<div>
+					<label><input type="checkbox" name="checkbox" value="Happy" 
+						onChange={this.handleFormOnChange} 
+					/>Single Checkbox</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="checkbox" value="Sad" id="Sad" 
+						onChange={this.handleFormOnChange} 
+					/>
+					<label htmlFor="Sad">Single Checkbox</label>
+				</div>
 
 				{checkboxGroup}
 
