@@ -2,20 +2,17 @@ import React, { Component, Fragment } from 'react';
 import './style.css';
 
 export default class Form extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			text01: '',
-			text02: '', 
-			checkbox: true,
-			checkboxGroup: ['Two', 'Three'],
-			radioGroup: 'Radio One', 
-			select: 'Option 2', 
-			textarea: ''
-		}
+	state = {
+		text01: '',
+		text02: '', 
+		checkbox: true,
+		checkboxGroup: ['Two', 'Three'],
+		radioGroup: 'Radio One', 
+		select: 'Option 2', 
+		textarea: ''
 	}
 
-	handleFormOnChange(event) {
+	handleFormOnChange = event => {
 		const target = event.target;
 		console.log( target.readonly )
 		if ( target.type === 'checkbox' && Array.isArray(this.state[target.name]) ) {
@@ -40,7 +37,7 @@ export default class Form extends Component {
 		}
 	}
 
-	handleFormOnSubmit(event) {
+	handleFormOnSubmit = event => {
 		event.preventDefault();
 		console.log( JSON.stringify(this.state) );
 	}
