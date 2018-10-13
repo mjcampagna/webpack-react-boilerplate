@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Icon extends Component {
   static defaultProps = {
@@ -57,4 +58,9 @@ export default class Icon extends Component {
 
     }
   }
+}
+
+Icon.propTypes = {
+  color: PropTypes.string,
+  name: PropTypes.string,
 }

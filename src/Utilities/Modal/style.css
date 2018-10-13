@@ -48,8 +48,11 @@
 }
 
 #modal-exit {
-  cursor: pointer;
   position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+}
+
+#modal-exit.closeOnOutsideClick {
+  cursor: pointer;
 }
 
 #modal-card {
@@ -59,7 +62,6 @@
   display: inline-block;
   font-size: 0.875rem;
   margin: 24px;
-  max-width: 768px;
   padding: 44px;
   position: relative;
   text-align: left;

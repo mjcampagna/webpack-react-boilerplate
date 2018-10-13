@@ -13,23 +13,19 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-
 		setTimeout(() => {
 			this.setState({
 				isLoading: false
 			})
 		}, 250);
-
 	}
 
 	render() {
 		if ( this.state.isLoading ) {
-			return <Loading name="tail-spin" color="#191919" size="32" />;
+			return <Loading name="spinner" color="#191919" size={32} />;
 		}
 		return (
-
 			<Demo />
-
 		);
 	}
 }

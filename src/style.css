@@ -24,3 +24,24 @@ body * {
 p {
 	margin-bottom: 1.25rem;
 }
+
+/* h2 {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: center bottom 30%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  color: #000;
+  padding: 0.5em 0;
+  text-decoration: none;
+  text-shadow:
+     3px 0 #FFEB3B,
+     2px 0 #FFEB3B,
+     1px 0 #FFEB3B,
+    -1px 0 #FFEB3B,
+    -2px 0 #FFEB3B,
+    -3px 0 #FFEB3B;
+}
+
+h2 {
+  font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+} */

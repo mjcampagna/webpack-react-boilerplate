@@ -367,6 +367,26 @@ p {
 	margin-bottom: 1.25rem;
 }
 
+/* h2 {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: center bottom 30%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  color: #000;
+  padding: 0.5em 0;
+  text-decoration: none;
+  text-shadow:
+     3px 0 #FFEB3B,
+     2px 0 #FFEB3B,
+     1px 0 #FFEB3B,
+    -1px 0 #FFEB3B,
+    -2px 0 #FFEB3B,
+    -3px 0 #FFEB3B;
+}
+
+h2 {
+  font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+} */
 #eu-cookie-notice {
 	background: #333;
 	border: 0 solid #FDD835;
@@ -480,8 +500,11 @@ p {
 }
 
 #modal-exit {
-  cursor: pointer;
   position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+}
+
+#modal-exit.closeOnOutsideClick {
+  cursor: pointer;
 }
 
 #modal-card {
@@ -491,7 +514,6 @@ p {
   display: inline-block;
   font-size: 0.875rem;
   margin: 24px;
-  max-width: 768px;
   padding: 44px;
   position: relative;
   text-align: left;
