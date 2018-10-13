@@ -8,6 +8,7 @@ import './style.css';
 export default class Modal extends Component {
   static defaultProps = {
     closeOnOutsideClick: true,
+    modalClassName: null,
     modalMaxWidth: 768,
   }
 
@@ -71,6 +72,7 @@ export default class Modal extends Component {
 
 Modal.propTypes = {
   closeOnOutsideClick: PropTypes.bool,
+  modalClassName: PropTypes.string,
   modalMaxWidth: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.string,
